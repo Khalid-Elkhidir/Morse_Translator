@@ -1,4 +1,4 @@
-# translator
+# Morse Translator
 
 A new Flutter project.
 
