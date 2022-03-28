@@ -5,7 +5,7 @@ import 'package:translator/features/translator/data/repositories/script_reposito
 import 'package:translator/features/translator/domain/entities/script.dart';
 import 'package:translator/features/translator/domain/usecases/convert_to_english.dart';
 import 'package:translator/features/translator/domain/usecases/convert_to_morse.dart';
-import 'package:translator/features/translator/presentaition/bloc/script_bloc.dart';
+import 'package:translator/features/translator/presentation/bloc/script_bloc.dart';
 
 
 void main() {
@@ -20,7 +20,7 @@ void main() {
   test(
     "initial state should be Empty",
         () {
-        expect(bloc.initialState, equals(Empty()));
+        expect(bloc.state, equals(Empty()));
     },);
 
   blocTest<ScriptBloc, ScriptState>(
